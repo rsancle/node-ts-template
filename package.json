@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_PATH=./build node build/index.js",
     "build": "tsc -p .",
-    "dev": "NODE_ENV=dev ts-node-dev --ignore-watch node_modules ./src/App/start.ts",
+    "dev": "NODE_ENV=dev ts-node-dev --poll --ignore-watch node_modules ./src/App/start.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

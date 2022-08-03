@@ -1,9 +1,9 @@
 
 SERVICE_NAME:=node_app
 build:
-	docker-compose -f docker-compose.dev.yml build $(SERVICE_NAME) --no-cache
+	docker-compose -f docker-compose.dev.yml build --no-cache
 up:
-	docker-compose -f docker-compose.dev.yml up --build
+	docker-compose -f docker-compose.dev.yml up
 
 down: 
 	docker-compose -f docker-compose.dev.yml down $(SERVICE_NAME)

@@ -1,13 +1,14 @@
 import express from 'express';
+import Server from './Server';
 
 
 const app = express();
 
-
+console.log("hello world");
 
 
 app.all('*', async () => {
-
+    console.log("hello world");
 })
 
 const start = async () => {
