@@ -7,3 +7,5 @@ services:
       dockerfile: ./docker/node/Dockerfile.dev
     ports:
       - 3000:3000
+    volumes:
+      - .:/app

@@ -6,8 +6,8 @@ RUN apk --no-cache add git
 WORKDIR /app
 COPY package.json .
 COPY package-lock.json ./
-RUN npm install
+
 COPY . .
 
-ENTRYPOINT ["npm", "run", "dev"]
+ENTRYPOINT ["/bin/sh", "-c", "npm install && npm run dev"]
 
